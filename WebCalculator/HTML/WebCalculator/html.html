@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Klakulator</title>
+        <meta charset="utf-8">
+        <title>Calculator.math</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="animate.min.css">
     </head>
     <body>
+        <div id="background">
+        <ul>
+            <li><a class="active" href="html.html">Home</a></li>
+            <li><a href="html2.html">Explains</a></li>
+        </ul>        
         <form name="buttons">
-         <h1>Kalkulator</h1>
-         <h2>Wpisz dwie liczby (np. 12 i 34)</h2>
-          <form>
-              Pierwsza liczba<br>
-              <input type="text" id="first-number"><br>
-              Druga liczba:<br>
-              <input type="text" class="second-number">
-         </form>
-         <h2>co chcesz zrobić z tymi liczbami?</h2>>
-             <button name="add" id="dodaj">Dodaj</button>
-             <button name="sub" id="odejmij">Odejmij</button>
-             <button name="div" id="podziel">Podziel</button>
-             <button name="mul" id="pomnoz">Pomnóż</button>
-        
-            <h2>Twój Wynik</h2>
-            <input type="text" name="Wynik" id="wynik">
+            <div id="animacja1"></div>
+            <h1>Calculator</h1>
+        <form>
+              A:
+              <br>
+              <input type="text" id="first-number">
+              <br>
+              B:
+              <br>
+              <input type="text" class="second-number" id="second-number">
+            <br>
+            </form>
+            <br>
+             <button name="add" id="dodaj">Add</button>
+             <br>
+             <button name="sub" id="odejmij">Subtract</button>
+             <br>
+             <button name="div" id="podziel">Divide</button>
+             <br>
+             <button name="mul" id="pomnoz">Multiple</button>
+             <br>
+             <button name="potega" id="potega">Power</button>
+             <br>
+             <button name="sqrt" id="sqrt">Square root</button>
+             <br>
+             <button name="cbrt" id="cbrt">Cube root</button> 
+             <br>
+             <h2>Score:</h2> 
+             <input type="text" id="wynik">    
+             <br>
+             <br>
+             <br>    
             <script src="script.js"></script>
         </form>
+    </div>
     </body>
 </html>
